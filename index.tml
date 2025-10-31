@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Pokémon Notes</h1>
+  </header>
+
+  <main>
+    <section id="category-section">
+      <h2>Categories</h2>
+      <div id="categories"></div>
+      <button id="add-category-btn">➕ Add Category</button>
+    </section>
+
+    <section id="notes-section" class="hidden">
+      <h2 id="category-title"></h2>
+      <div id="notes"></div>
+      <button id="add-note-btn">➕ Add Note</button>
+      <button id="back-btn">⬅ Back</button>
+    </section>
+  </main>
+
+  <!-- Popup modal -->
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <h3 id="modal-title">Add New</h3>
+      <input type="text" id="input-title" placeholder="Title (e.g., Route 5)" />
+      <textarea id="input-description" placeholder="Write details (Pokémon found, reasons, moves...)"></textarea>
+      <button id="save-btn">💾 Save</button>
+      <button id="cancel-btn">❌ Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
